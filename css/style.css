@@ -1,0 +1,208 @@
+@media screen and (min-width: 800px) {
+    /* =Hero
+    ------------------------------------------------------ */
+    .header { padding: 5rem 6rem; }
+    .menu__mobile { display: none; }
+
+    /* =Menu desktop 
+    ------------------------------*/
+    .menu__desktop {
+        display: flex;
+        color: var(--white);        
+    }
+
+    .menu__desktop li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__desktop li a {        
+        margin: 0 20px;
+        text-transform: capitalize;
+        color: var(--white);
+    }    
+    .menu__desktop a:hover + .border-detail { border-bottom: solid 2px var(--white); }
+
+    .hero { 
+        background: url(/images/desktop/image-hero.jpg);
+        background-size: cover; 
+     }     
+    .hero__call { padding: 5rem 6rem; }
+    .hero__call h1 {           
+        max-width: 45rem;            
+        padding: 3vmin;
+        font-size: 5vmax;
+    }    
+
+    /* =About
+    ------------------------------------------------------ */
+    .about {
+        padding: 5rem 6rem 0 6rem;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-row: 1;
+    }
+
+    .about__image {        
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .about__content {
+        min-width: 480px;
+        padding: 8rem;
+        grid-column: 4/9;
+        grid-row: 1/3;
+        background: var(--white);
+        text-align: left;
+    }
+
+    .about__content h2 { 
+        font-size: 60px;
+        padding-left: 1rem;
+        text-align: left; 
+    }
+
+    /* =Creations
+    ------------------------------------------------------ */
+    
+    .creations { padding: 0 6rem 8rem 6rem; }
+    .creations__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);        
+    }
+    .creations__itens { 
+        height: 480px;
+    }
+    .grad { background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.582) 2%, rgba(238, 237, 237, 0) 100%); }
+    
+    .creations__itens:hover > .grad ~ h3 {
+        height: 100%;
+        width: 100%;
+        padding-top: 410px;    
+        background: hsla(0, 0%, 100%, .5) ;    
+        color: var(--black);
+    }
+
+    .creations__itens:nth-child(1) {        
+        background: url(/images/desktop/image-deep-earth.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;
+    }
+
+    .creations__itens:nth-child(2) {        
+        background: url(/images/desktop/image-night-arcade.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;
+    }
+
+    .creations__itens:nth-child(3) {
+        background: url(/images/desktop/image-soccer-team.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;  
+    }
+    
+    .creations__itens:nth-child(4) {
+        background: url(/images/desktop/image-grid.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;    
+    }
+
+    .creations__itens:nth-child(5) {
+        background: url(/images/desktop/image-from-above.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;
+    }
+
+    .creations__itens:nth-child(6) {
+        background: url(/images/desktop/image-pocket-borealis.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;                  
+    }
+
+    .creations__itens:nth-child(7) {
+        background: url(/images/desktop/image-curiosity.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;
+    }
+
+    .creations__itens:nth-child(8) {
+        background: url(/images/desktop/image-fisheye.jpg) 
+                          no-repeat
+                          top center;
+        background-size: cover;
+    }
+
+    .creations h2 { margin-bottom: 0; }
+
+    .creations .btn { 
+        margin: 0; 
+        padding: 8px;
+    }
+
+    .creatinos__title {
+        margin-bottom: 4rem;        
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;     
+    }
+
+    .btn__call--mobile { display: none; }
+    .btn__call--desktop { display: block; }
+
+    /* =Footer 
+    ------------------------------------------------------ */
+    .footer { 
+        height: 240px;
+        padding: 0 6rem; 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);              
+    }
+
+    .footer__logo img {
+        margin-left: 10px;
+        grid-column: 1/3;
+        grid-row: 1;
+        padding-bottom: 10px;
+        flex-grow: 2;         
+    }
+
+    .footer ul { 
+        margin-bottom: 0;
+        grid-column: 1/3;
+        grid-row: 2;           
+        display: flex;
+        justify-self: start;
+    }  
+    
+    .social {   
+        grid-column: 3/4;
+        grid-row: 1;        
+        justify-self: end;        
+    }
+
+    .footer p {   
+        margin-bottom: 50px;     
+        grid-column: 3/4;
+        grid-row: 2;        
+        justify-self: center;
+    }
+
+    .footer p:last-child {  
+        grid-column: 1/4;
+        grid-row: 3;        
+        justify-self: center;
+        font-size: .8rem;
+    }
+
+}
